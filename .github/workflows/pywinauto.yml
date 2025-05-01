@@ -16,15 +16,20 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install pytest pywinauto Faker pytest-html psutil
+          python -m pip install pytest pywinauto Faker pytest-html psutil mitmproxy        
 
       - name: List versions of pip dependencies
         run: |
           echo "Versions of pip dependencies:"
-          pip show pytest pywinauto Faker pytest-html
+          pip show pytest pywinauto Faker pytest-html psutil mitmproxy 
 
       - name: Create reports directory
         run: mkdir reports
