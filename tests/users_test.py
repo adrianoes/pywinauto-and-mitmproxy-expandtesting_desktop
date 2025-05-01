@@ -4,10 +4,7 @@ import time
 import psutil
 import json
 import os
-import glob
 import subprocess
-from faker import Faker
-
 from faker import Faker
 from tests.support import create_user, delete_json_output_file, delete_json_test_data_file, delete_user, login_user, terminate_cmder_process_tree, write_json_test_data_file
 

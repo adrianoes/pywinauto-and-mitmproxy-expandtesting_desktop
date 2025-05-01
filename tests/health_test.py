@@ -6,7 +6,7 @@ import json
 import os
 import subprocess
 
-def test_health_curl_mocked():
+def test_health_server_error():
     cmder_path = r'Cmder.exe'
     output_dir = os.path.join(os.path.dirname(__file__), '..', 'resources')
     output_file = os.path.abspath(os.path.join(output_dir, 'api_output.json'))

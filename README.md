@@ -1,6 +1,6 @@
 # pywinauto-and-mitmproxy-expandtesting_desktop
 
-Desktop testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-docs/) API documentation through pywinauto. This project contains basic examples on how to use pywinauto and Cmder to send curl commands. Good practices such as hooks, custom commands and tags, among others, are used. All the necessary support documentation to develop this project is placed here. 
+Desktop testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-docs/) API documentation through pywinauto, mitmproxy and cmder. This project contains basic examples on how to use pywinauto, mitmproxy and Cmder to send curl commands through cmder, mock the network responses to 500 code and assert how cmder behave with it. Good practices such as hooks, custom commands and tags, among others, are used. All the necessary support documentation to develop this project is placed here. 
 
 # Pre-requirements:
 
@@ -29,7 +29,7 @@ Check then both to add both options in context menu.
   - :white_check_mark: Add python.exe to PATH
 and keep all the other preferenced options as they are.
 - Look for Python in the extensions marketplace and install the one from Microsoft.
-- See [Cmder | Console Emulator page](https://cmder.app/), donwload the latest Mini version and unzip it in C:\pywinauto-expandtesting_desktop. 
+- See [Cmder | Console Emulator page](https://cmder.app/), donwload the latest Mini version and unzip it in C:\pywinauto-and-mitmproxy-expandtesting_desktop. 
 - See [mitmproxy page](https://mitmproxy.org/), download and execute the downloaded file to install. :point_right: **Next**, :point_right: **Install** and :point_right: **Finish**.
   - If there is the need to work with mitmproxy in the terminal, on Windows tool bar, :mag: **proxy**, :point_right: **Proxy Configurations**, :point_right: **Set up** on Use a proxy server frame, :point_right: **Use a proxy server**, :point_right: **Use a proxy server**, type **localhost** and **8080** on Proxy IP address and Port fields respectively and :point_right: **Save**. This proxy configs should be deactivated when running the tests, since test scripts already take care of such configuration. 
   - See [Install mitmproxy's Certificate Authority page](http://mitm.it/) and download the windows one. Execute it, :point_right: **Next**, :point_right: **Next**, :point_right: **Next**, :point_right: **Next**, :point_right: **Finish**, :point_right: **Yes** and :point_right: **Ok**. Remember to undo this step after testing. 
